@@ -109,7 +109,7 @@ $page = 5;
 			</div>
 		</div>
 	</div>
-	<div class="gallary-3">
+	<div class="gallery-3">
 		<?php $i=0; foreach($list as $item){
 					if($i < 8){
 						$i++;
@@ -130,8 +130,13 @@ $page = 5;
 					$i++;
 				} ?>
 	</div>
-</div>
-
-
-
+	
+	
+	<div class="gradient">
+		<div class="button">
+		<button>View More
+			<div class="svg"><svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style></defs><g id="ic-arrows-bottom"><line class="cls-1" x1="12" y1="3.93" x2="12" y2="20.07"/><path class="cls-1" d="M7.22,15.67l4.11,4.11a1,1,0,0,0,1.41,0l4-4"/></g></svg></div></button>
+	</div>
+	</div>
+	
 </div>

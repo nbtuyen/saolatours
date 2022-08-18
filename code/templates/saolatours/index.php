@@ -178,27 +178,10 @@
 				<?php  echo $tmpl -> load_position('pos6','XHTML2'); ?>
 			</div>
 		</div>
+		
 	<?php }?>
 
-	<?php if($tmpl->count_block('pos7')) {?>
-		<div class="pos7" style="background-image: url('https://avtravel.com/wp-content/uploads/2017/10/122912584-VietnamHighlights-2017-2018.jpg');background-repeat: no-repeat;background-size: 100%;">
-			<div class="container cls">
-				<?php  echo $tmpl -> load_position('pos7','XHTML2'); ?>
-			</div>
-		</div>
-	<?php }?>
 
-	<!-- <?php if($tmpl->count_block('pos8')) {?>
-		<div class="pos8">
-			<div class="img-by-fast">
-				<img class="lazy" data-src="<?php echo URL_ROOT.$config['img_dang_ky'] ?>" alt="Đăng ký tư vấn">
-			</div>
-			<div class="container">
-				<?php  echo $tmpl -> load_position('pos8','XHTML2'); ?>
-			</div>
-		</div>
-	<?php }?>
- -->
 	<?php if($tmpl->count_block('pos9')) {?>
 		<div class="pos9">
 			<div class="container">
@@ -216,7 +199,19 @@
 			</div>
 		</div>
 		<div class="social">
-			<svg version="1.1" width=24 id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<svg version="1.1" fill="white" stroke="white" width=15 id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
+			<g id="XMLID_834_">
+				<path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+					c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+					V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+					C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+					c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+			</g>
+			<g>
+			</g>
+			</svg>
+			<svg version="1.1" width=15 fill="white" stroke="white" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 				<g>
 					<g>
@@ -232,26 +227,19 @@
 				<g>
 				</g>
 			</svg>
-			<svg width="24px" height="24px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<circle cx="9" cy="8.00012" r="4" fill="#2F88FF" stroke="black" stroke-width="4"/>
-			<rect x="5" y="18.0001" width="8" height="25" fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round"/>
-			<path d="M21 27.5V43H28V29C28 26.5 29.5 24.5 32 24.5C34.5 24.5 36 27 36 29V43H43V27.5C43 24.5 39.5 18 32 18C24.5 18 21 24.5 21 27.5Z" fill="#2F88FF" stroke="black" stroke-width="4" stroke-linejoin="round"/>
-			</svg>
-			<svg version="1.1" width=24 id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve">
-			<g id="XMLID_834_">
-				<path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
-					c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
-					V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
-					C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
-					c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
-			</g>
-			<g>
-			</g>
+			<svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="9" cy="8.00012" r="4" fill="white" stroke="white" stroke-width="4"/>
+			<rect x="5" y="18.0001" width="8" height="25" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+			<path d="M21 27.5V43H28V29C28 26.5 29.5 24.5 32 24.5C34.5 24.5 36 27 36 29V43H43V27.5C43 24.5 39.5 18 32 18C24.5 18 21 24.5 21 27.5Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
 			</svg>
 		</div>
 		<div class="coppy-right">
+			<div class="title-main">
+				<?php echo $config['title']; ?>
+			</div>
 			<?php echo $config['copy_right']; ?>
+			<p>International Tour Operator License #TCDL-GP-LHQT <br>
+​			<span >Privacy Policy</span></p>
 		</div>
 
 	</div>
