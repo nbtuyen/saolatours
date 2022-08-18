@@ -1,0 +1,33 @@
+.fix_bottom_mobile{
+	position: fixed;
+	bottom: 0px;
+	z-index:10;
+	background: var(--main-color);
+	width: 100%;
+	display: none;
+	@media all and (max-width: 500px) {
+		display: block;
+	}
+	.all-item{
+		display: flex;
+	}
+	.item{
+		text-align: center;
+		width: 100%;
+		padding: 5px 3px;
+		.icon{
+			svg{
+				width: 18px;
+				height: 18px;
+				fill:#fff;
+			}
+			display: block;
+		}
+		.name{
+			display: block;
+			color: #fff;
+			font-size: 13px;
+		}
+
+	}
+}

@@ -1,0 +1,75 @@
+RewriteEngine On
+# --- Thêm www vào URL-----
+
+RewriteCond %{HTTP_HOST} ^gallewatch.com
+RewriteRule ^(.*)$ http://www.gallewatch.com/$1 [R=permanent,L]
+
+RewriteRule ^([^/]*)\.htc$ PIE.htc?=1 [L]
+RewriteRule ^([^/]*)/f([^/]*).html$ /vn/type.php?Rcat=$1&iFilter=$2&%{QUERY_STRING} [L]
+RewriteRule ^([^/]*)-p([0-9]*).html$ /vn/type.php?Rcat=$1&iPrice=$2&%{QUERY_STRING} [L]
+
+RewriteRule ^([^/]*).html$ /vn/type.php?Rcat=$1&%{QUERY_STRING} [L]
+RewriteRule ^([^/]*)/([^/]*).html$ /vn/detail.php?Rcat=$1&Rdata=$2&%{QUERY_STRING} [L]
+
+ErrorDocument 400 /error400.htm
+ErrorDocument 401 /error401.htm
+ErrorDocument 403 /error403.htm
+ErrorDocument 404 /errordocs/error404.php
+ErrorDocument 500 /error500.htm
+
+RewriteRule ^([^/]*)$ /vn/index.php [L]
+
+RewriteRule ^$ /vn [L]
+
+
+###Start Kloxo PHP config Area
+###Please Don't edit these comments or the content in between. kloxo uses this to recognize the lines it writes to the the file. If the above line is corrupted, it may fail to recognize them, leading to multiple lines.
+
+<Ifmodule mod_php4.c>
+	php_value error_log "/home/admin/__processed_stats/webdongho.vn.phplog"
+	php_value upload_max_filesize 2M
+	php_value max_execution_time  30
+	php_value max_input_time  60
+	php_value memory_limit  32M
+	php_value post_max_size  8M
+	php_flag register_globals  off
+	php_flag display_errors  off
+	php_flag file_uploads  on
+	php_flag log_errors  off
+	php_flag output_buffering  off
+	php_flag register_argc_argv  on
+	php_flag magic_quotes_gpc   off
+	php_flag magic_quotes_runtime  off
+	php_flag magic_quotes_sybase  off
+	php_flag mysql.allow_persistent  off
+	php_flag register_long_arrays  on
+	php_flag allow_url_fopen  on
+	php_flag cgi.force_redirect  on
+	php_flag enable_dl  on
+</Ifmodule>
+
+<Ifmodule mod_php5.c>
+	php_value error_log "/home/admin/__processed_stats/webdongho.vn.phplog"
+	php_value upload_max_filesize 2M
+	php_value max_execution_time  30
+	php_value max_input_time  60
+	php_value memory_limit  32M
+	php_value post_max_size  8M
+	php_flag register_globals  off
+	php_flag display_errors  off
+	php_flag file_uploads  on
+	php_flag log_errors  off
+	php_flag output_buffering  off
+	php_flag register_argc_argv  on
+	php_flag magic_quotes_gpc   off
+	php_flag magic_quotes_runtime  off
+	php_flag magic_quotes_sybase  off
+	php_flag mysql.allow_persistent  off
+	php_flag register_long_arrays  on
+	php_flag allow_url_fopen  on
+	php_flag cgi.force_redirect  on
+	php_flag enable_dl  on
+</Ifmodule>
+
+###End Kloxo PHP config Area
+

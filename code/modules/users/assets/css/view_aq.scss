@@ -1,0 +1,19 @@
+.view_aq{
+	.item{
+		background: #fff;
+		border:1px solid #eee;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		padding: 10px;
+		line-height: 22px;
+		.question{
+			font-weight: bold;
+		}
+		.content{
+			
+		}
+	}
+	a{
+		color: var(--blue-color);
+	}
+}

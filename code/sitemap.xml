@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+    <loc>https://conhantaogiare.com/sitemap_news.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://conhantaogiare.com/sitemap_news_cat.xml</loc>
+  </sitemap>
+  <sitemap>
+   <loc>https://conhantaogiare.com/sitemap_contents.xml</loc>
+  </sitemap>
+  <sitemap>
+     <loc>https://conhantaogiare.com/sitemap_product.xml</loc>
+  </sitemap>
+   <sitemap>
+     <loc>https://conhantaogiare.com/sitemap_product_cat.xml</loc>
+  </sitemap>
+</sitemapindex>

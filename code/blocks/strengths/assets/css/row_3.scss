@@ -1,0 +1,214 @@
+.wrap-strengths-row3{
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0px 90px;
+    width: 100%;
+    box-sizing: border-box;
+    @media all and (max-width: 768px) {
+        padding: 0px;
+    }
+}
+
+.block-strengths-row-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -20px;
+	.item{
+		width: calc(100% / 3 - 40px);
+        margin: 0px 20px;
+        text-align: center;
+        position: relative;
+        box-sizing: border-box;
+		svg{
+			width: 40px;
+            height: 40px;
+            fill: var(--main-color);
+            margin-bottom: 26px;
+		}
+        .summary{
+            font-size: 54px;
+            line-height: 50px;
+            color: #fead00;
+            margin-bottom: 22px;
+            span{
+                font-weight: normal;
+            }
+        }
+        .title{
+            font-size: 22px;
+            margin-bottom: 24px;
+            display: block;
+            line-height: 26px;
+        }
+        .summary-hover{
+            line-height: 22px;
+            font-family: 'LexendLight';
+        }
+	}
+    @media all and (max-width: 1170px) {
+        margin: 0px;
+    }
+    @media all and (max-width: 768px) {
+        .item{
+            svg{
+                width: 30px;
+                height: 30px;
+                margin-bottom: 12px;
+            }
+            .summary{
+                font-size: 30px;
+                line-height: 50px;
+                color: #fead00;
+                margin-bottom: 10px;
+            }
+            .title{
+                font-size: 16px;
+                margin-bottom: 8px;
+                display: block;
+                line-height: 22px;
+            }
+        }
+    }
+    @media all and (max-width: 412px) {
+        margin: 0px -10px;
+        .item{
+            width: calc(100% / 3 - 20px);
+            margin: 0px 10px;
+        }
+    }
+}
+
+.block-strengths-row-2{
+	.item:nth-child(1){
+		svg{
+			animation: 4s ease-in-out 0s normal none infinite running chang-rotage-anim;	
+		}
+	}
+	.item:nth-child(2){
+		svg{
+            animation: 4s ease-in-out 0s normal none infinite running chang-rotage-anim-a1;
+			// animation: 4s ease-in-out 0s normal none infinite running change-rotage-anim-10;	
+		}
+	}
+	.item:nth-child(3){
+		svg{
+			animation: 4s ease-in-out 0s normal none infinite running chang-rotage-anim-a2;	
+		}
+	}
+
+    .item:nth-child(4){
+        svg{
+            animation: 4s ease-in-out 0s normal none infinite running chang-rotage-anim-a3; 
+        }
+    }
+
+     @keyframes chang-rotage-anim {
+        0% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        5% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        10% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        15% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        20% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        25% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+       
+    }
+
+    @keyframes chang-rotage-anim-a1 {
+        0% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        25% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        30% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        35% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        40% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        45% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        50% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+       
+    }
+
+    @keyframes chang-rotage-anim-a2 {
+        0% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        50% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        55% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        60% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        65% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        70% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        75% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+       
+    }
+
+    @keyframes chang-rotage-anim-a3 {
+        0% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        75% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        80% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        85% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        90% {
+            transform: rotate(-10deg) scale(1) skew(1deg);
+        }
+        95% {
+            transform: rotate(10deg) scale(1) skew(1deg);
+        }
+        97% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+        100% {
+            transform: rotate(0deg) scale(1) skew(1deg);
+        }
+    }
+
+}

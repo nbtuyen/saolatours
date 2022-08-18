@@ -1,0 +1,251 @@
+
+================REMOTE: 127.0.0.1  (2020-06-08 17:50:11)===================
+
+================URL : /admin_adminhailynksr3/index.php?module=products&view=add_update_excel&task=import_product===================
+
+================1591613411===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text_admin 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0010790824890137
+
+===========
+
+SELECT id,`trigger` FROM fs_permission_tasks WHERE module = "products" AND `view` = "add_update_excel"
+
+time:::0.000518798828125
+
+===========
+
+ INSERT INTO  fs_admin_history(`module`,`view`,`task`,`user_id`,`username`,`ipaddress`,`created_time`) VALUES ('products','add_update_excel','import_product','9','admin','127.0.0.1','2020-06-08 17:50:11') 
+
+time:::0.00071597099304199
+
+===========
+
+ SELECT *
+		FROM fs_manufactories 
+
+time:::0.001492977142334
+
+===========
+
+ SELECT alias,name,root_alias,id,tablename,list_parents,published,alias_wrapper
+		FROM fs_products_categories 
+
+time:::0.001129150390625
+
+===========
+
+ SELECT id,code,tablename
+			FROM fs_products
+			WHERE code="BN001"
+
+time:::0.0013279914855957
+
+===========
+
+UPDATE fs_products SET `code` = 'BN001',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`tablename` = 'fs_products_bon_nuoc',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`description` = '<p>Mô tả sản phẩm</p>',`gift` = 'Tặng phiếu mua hàng 500.000đ và vận chuyển miễn phí toàn quốc',`warranty` = '12 tháng',`tags` = 'bồn nước, bồn nước inox',`published` = '1',`seo_title` = 'Bồn nước inox 560L Đứng giá rẻ',`seo_keyword` = 'bồn nước nam á,bồn inox cao cấp',`seo_description` = 'Bồn nước inox 560L Đứng giá rẻ Nam Á giá rẻ',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`image_old` = 'http://hailinh.local/images/products/2020/05/21/large/g3_1590048820.jpg',`edited_time` = '2020-06-08 17:50:30' WHERE id = 1
+
+time:::0.00093793869018555
+
+===========
+
+ SELECT id,record_id
+			FROM fs_products_bon_nuoc
+			WHERE code= "BN001"
+
+time:::0.010281085968018
+
+===========
+
+UPDATE fs_products_bon_nuoc SET `code` = 'BN001',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`warranty` = '12 tháng',`published` = '1',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`edited_time` = '2020-06-08 17:50:30',`record_id` = '1' WHERE record_id = 1
+
+time:::0.0026619434356689
+
+===========
+
+ SELECT id,code,tablename
+			FROM fs_products
+			WHERE code="BN002"
+
+time:::0.00089311599731445
+
+===========
+
+UPDATE fs_products SET `code` = 'BN002',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`tablename` = 'fs_products_bon_nuoc',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`description` = '<p>Mô tả sản phẩm</p>',`gift` = 'Tặng phiếu mua hàng 500.000đ và vận chuyển miễn phí toàn quốc',`warranty` = '12 tháng',`tags` = 'bồn nước, bồn nước inox',`published` = '1',`seo_title` = 'Bồn nước inox 560L Đứng giá rẻ',`seo_keyword` = 'bồn nước nam á,bồn inox cao cấp',`seo_description` = 'Bồn nước inox 560L Đứng giá rẻ Nam Á giá rẻ',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`image_old` = 'http://hailinh.local/images/products/2020/05/21/large/g3_1590048820.jpg',`edited_time` = '2020-06-08 17:50:30' WHERE id = 2
+
+time:::0.00094008445739746
+
+===========
+
+ SELECT id,record_id
+			FROM fs_products_bon_nuoc
+			WHERE code= "BN002"
+
+time:::0.00081706047058105
+
+===========
+
+ INSERT INTO  fs_products_bon_nuoc(`code`,`name`,`alias`,`price_old`,`discount`,`price`,`category_id`,`category_id_wrapper`,`category_root_alias`,`category_alias_wrapper`,`category_name`,`category_alias`,`category_published`,`manufactory`,`manufactory_id_wrapper`,`manufactory_alias_wrapper`,`manufactory_name`,`manufactory_alias`,`type`,`summary`,`warranty`,`published`,`ordering`,`ordering2`,`status`,`is_new`,`is_hot`,`is_sell`,`edited_time`,`record_id`) VALUES ('BN002','Bồn nước inox 560L Đứng','bon-nuoc-inox-560l-dung','5000000','10','4500000','15',',15,3,','',',bon-nuoc-inox-dung,bon-nuoc,','Bồn nước inox đứng','bon-nuoc-inox-dung','1','63',',63,',',nam-a,','Nam Á','nam-a','4','tóm tắt','12 tháng','1','100','101','1','1','1','1','2020-06-08 17:50:30','1') 
+
+time:::0.00052094459533691
+
+===========
+
+ SELECT id,code,tablename
+			FROM fs_products
+			WHERE code="BN003"
+
+time:::0.00081801414489746
+
+===========
+
+UPDATE fs_products SET `code` = 'BN003',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`tablename` = 'fs_products_bon_nuoc',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`description` = '<p>Mô tả sản phẩm</p>',`gift` = 'Tặng phiếu mua hàng 500.000đ và vận chuyển miễn phí toàn quốc',`warranty` = '12 tháng',`tags` = 'bồn nước, bồn nước inox',`published` = '1',`seo_title` = 'Bồn nước inox 560L Đứng giá rẻ',`seo_keyword` = 'bồn nước nam á,bồn inox cao cấp',`seo_description` = 'Bồn nước inox 560L Đứng giá rẻ Nam Á giá rẻ',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`image_old` = 'http://hailinh.local/images/products/2020/05/21/large/g3_1590048820.jpg',`edited_time` = '2020-06-08 17:50:30' WHERE id = 3
+
+time:::0.0007779598236084
+
+===========
+
+ SELECT id,record_id
+			FROM fs_products_bon_nuoc
+			WHERE code= "BN003"
+
+time:::0.00084400177001953
+
+===========
+
+ INSERT INTO  fs_products_bon_nuoc(`code`,`name`,`alias`,`price_old`,`discount`,`price`,`category_id`,`category_id_wrapper`,`category_root_alias`,`category_alias_wrapper`,`category_name`,`category_alias`,`category_published`,`manufactory`,`manufactory_id_wrapper`,`manufactory_alias_wrapper`,`manufactory_name`,`manufactory_alias`,`type`,`summary`,`warranty`,`published`,`ordering`,`ordering2`,`status`,`is_new`,`is_hot`,`is_sell`,`edited_time`,`record_id`) VALUES ('BN003','Bồn nước inox 560L Đứng','bon-nuoc-inox-560l-dung','5000000','10','4500000','15',',15,3,','',',bon-nuoc-inox-dung,bon-nuoc,','Bồn nước inox đứng','bon-nuoc-inox-dung','1','63',',63,',',nam-a,','Nam Á','nam-a','4','tóm tắt','12 tháng','1','100','101','1','1','1','1','2020-06-08 17:50:30','1') 
+
+time:::0.0006098747253418
+
+===========
+
+ SELECT id,code,tablename
+			FROM fs_products
+			WHERE code="BN004"
+
+time:::0.00086116790771484
+
+===========
+
+UPDATE fs_products SET `code` = 'BN004',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`tablename` = 'fs_products_bon_nuoc',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`description` = '<p>Mô tả sản phẩm</p>',`gift` = 'Tặng phiếu mua hàng 500.000đ và vận chuyển miễn phí toàn quốc',`warranty` = '12 tháng',`tags` = 'bồn nước, bồn nước inox',`published` = '1',`seo_title` = 'Bồn nước inox 560L Đứng giá rẻ',`seo_keyword` = 'bồn nước nam á,bồn inox cao cấp',`seo_description` = 'Bồn nước inox 560L Đứng giá rẻ Nam Á giá rẻ',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`image_old` = 'http://hailinh.local/images/products/2020/05/21/large/g3_1590048820.jpg',`edited_time` = '2020-06-08 17:50:30' WHERE id = 4
+
+time:::0.00088381767272949
+
+===========
+
+ SELECT id,record_id
+			FROM fs_products_bon_nuoc
+			WHERE code= "BN004"
+
+time:::0.00081086158752441
+
+===========
+
+ INSERT INTO  fs_products_bon_nuoc(`code`,`name`,`alias`,`price_old`,`discount`,`price`,`category_id`,`category_id_wrapper`,`category_root_alias`,`category_alias_wrapper`,`category_name`,`category_alias`,`category_published`,`manufactory`,`manufactory_id_wrapper`,`manufactory_alias_wrapper`,`manufactory_name`,`manufactory_alias`,`type`,`summary`,`warranty`,`published`,`ordering`,`ordering2`,`status`,`is_new`,`is_hot`,`is_sell`,`edited_time`,`record_id`) VALUES ('BN004','Bồn nước inox 560L Đứng','bon-nuoc-inox-560l-dung','5000000','10','4500000','15',',15,3,','',',bon-nuoc-inox-dung,bon-nuoc,','Bồn nước inox đứng','bon-nuoc-inox-dung','1','63',',63,',',nam-a,','Nam Á','nam-a','4','tóm tắt','12 tháng','1','100','101','1','1','1','1','2020-06-08 17:50:30','1') 
+
+time:::0.00056600570678711
+
+===========
+
+ SELECT id,code,tablename
+			FROM fs_products
+			WHERE code="BN006"
+
+time:::0.00091409683227539
+
+===========
+
+UPDATE fs_products SET `code` = 'BN006',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`tablename` = 'fs_products_bon_nuoc',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`description` = '<p>Mô tả sản phẩm</p>',`gift` = 'Tặng phiếu mua hàng 500.000đ và vận chuyển miễn phí toàn quốc',`warranty` = '12 tháng',`tags` = 'bồn nước, bồn nước inox',`published` = '1',`seo_title` = 'Bồn nước inox 560L Đứng giá rẻ',`seo_keyword` = 'bồn nước nam á,bồn inox cao cấp',`seo_description` = 'Bồn nước inox 560L Đứng giá rẻ Nam Á giá rẻ',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`image_old` = 'http://hailinh.local/images/products/2020/05/21/large/g3_1590048820.jpg',`edited_time` = '2020-06-08 17:50:30' WHERE id = 6
+
+time:::0.00083279609680176
+
+===========
+
+ SELECT id,record_id
+			FROM fs_products_bon_nuoc
+			WHERE code= "BN006"
+
+time:::0.00068783760070801
+
+===========
+
+ INSERT INTO  fs_products_bon_nuoc(`code`,`name`,`alias`,`price_old`,`discount`,`price`,`category_id`,`category_id_wrapper`,`category_root_alias`,`category_alias_wrapper`,`category_name`,`category_alias`,`category_published`,`manufactory`,`manufactory_id_wrapper`,`manufactory_alias_wrapper`,`manufactory_name`,`manufactory_alias`,`type`,`summary`,`warranty`,`published`,`ordering`,`ordering2`,`status`,`is_new`,`is_hot`,`is_sell`,`edited_time`,`record_id`) VALUES ('BN006','Bồn nước inox 560L Đứng','bon-nuoc-inox-560l-dung','5000000','10','4500000','15',',15,3,','',',bon-nuoc-inox-dung,bon-nuoc,','Bồn nước inox đứng','bon-nuoc-inox-dung','1','63',',63,',',nam-a,','Nam Á','nam-a','4','tóm tắt','12 tháng','1','100','101','1','1','1','1','2020-06-08 17:50:30','1') 
+
+time:::0.00058197975158691
+
+===========
+
+ SELECT id,code,tablename
+			FROM fs_products
+			WHERE code="BN007"
+
+time:::0.00072407722473145
+
+===========
+
+UPDATE fs_products SET `code` = 'BN007',`name` = 'Bồn nước inox 560L Đứng',`alias` = 'bon-nuoc-inox-560l-dung',`price_old` = '5000000',`discount` = '10',`price` = '4500000',`category_id` = '15',`category_id_wrapper` = ',15,3,',`category_root_alias` = '',`category_alias_wrapper` = ',bon-nuoc-inox-dung,bon-nuoc,',`category_name` = 'Bồn nước inox đứng',`category_alias` = 'bon-nuoc-inox-dung',`category_published` = '1',`tablename` = 'fs_products_bon_nuoc',`manufactory` = '63',`manufactory_id_wrapper` = ',63,',`manufactory_alias_wrapper` = ',nam-a,',`manufactory_name` = 'Nam Á',`manufactory_alias` = 'nam-a',`type` = '4',`summary` = 'tóm tắt',`description` = '<p>Mô tả sản phẩm</p>',`gift` = 'Tặng phiếu mua hàng 500.000đ và vận chuyển miễn phí toàn quốc',`warranty` = '12 tháng',`tags` = 'bồn nước, bồn nước inox',`published` = '1',`seo_title` = 'Bồn nước inox 560L Đứng giá rẻ',`seo_keyword` = 'bồn nước nam á,bồn inox cao cấp',`seo_description` = 'Bồn nước inox 560L Đứng giá rẻ Nam Á giá rẻ',`ordering` = '100',`ordering2` = '101',`status` = '1',`is_new` = '1',`is_hot` = '1',`is_sell` = '1',`image_old` = 'http://hailinh.local/images/products/2020/05/21/large/g3_1590048820.jpg',`edited_time` = '2020-06-08 17:50:30' WHERE id = 7
+
+time:::0.00076484680175781
+
+===========
+
+ SELECT id,record_id
+			FROM fs_products_bon_nuoc
+			WHERE code= "BN007"
+
+time:::0.00069785118103027
+
+===========
+
+ INSERT INTO  fs_products_bon_nuoc(`code`,`name`,`alias`,`price_old`,`discount`,`price`,`category_id`,`category_id_wrapper`,`category_root_alias`,`category_alias_wrapper`,`category_name`,`category_alias`,`category_published`,`manufactory`,`manufactory_id_wrapper`,`manufactory_alias_wrapper`,`manufactory_name`,`manufactory_alias`,`type`,`summary`,`warranty`,`published`,`ordering`,`ordering2`,`status`,`is_new`,`is_hot`,`is_sell`,`edited_time`,`record_id`) VALUES ('BN007','Bồn nước inox 560L Đứng','bon-nuoc-inox-560l-dung','5000000','10','4500000','15',',15,3,','',',bon-nuoc-inox-dung,bon-nuoc,','Bồn nước inox đứng','bon-nuoc-inox-dung','1','63',',63,',',nam-a,','Nam Á','nam-a','4','tóm tắt','12 tháng','1','100','101','1','1','1','1','2020-06-08 17:50:30','1') 
+
+time:::0.00054383277893066
+
+===========
+
+================REMOTE: 127.0.0.1  (2020-06-08 17:50:31)===================
+
+================URL : /admin_adminhailynksr3/index.php?module=products&view=add_update_excel===================
+
+================1591613431===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text_admin 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0011930465698242
+
+===========
+
+SELECT id,`trigger` FROM fs_permission_tasks WHERE module = "products" AND `view` = "add_update_excel"
+
+time:::0.00050902366638184
+
+===========
+
+ SELECT *, parent_id as parent_id
+						  FROM fs_menus_admin
+						  WHERE published = 1
+						  
+						  ORDER BY ordering 
+						 
+
+time:::0.0038537979125977
+
+===========
+
+ SELECT a.permission,b.module ,b.view 
+						FROM fs_users_permission AS a 
+						INNER JOIN fs_permission_tasks  AS b ON a.task_id = b.id
+						WHERE user_id = 9
+					
+
+time:::0.0005638599395752
+
+===========

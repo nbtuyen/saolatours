@@ -1,0 +1,116 @@
+.head_content {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 20px 0;
+	@media all and (max-width: 900px) {
+		padding: 0px 0px 10px;
+	}
+}
+.user_content {
+	width: calc(100% - 270px);
+	margin-left: 20px;
+	float: left;
+	@media all and (max-width: 900px) {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.user_content_inner {
+		background: #fff;
+		padding: 20px;
+		box-sizing: border-box;
+		@media all and (max-width: 900px) {
+			padding: 0px;
+		}
+	}
+}
+.menu_user {
+	width: 250px;
+	float: left;
+	height: 100%;
+	@media all and (max-width: 900px) {
+		width: 100%;
+		height: auto;
+		padding-top: 20px;
+	}
+	.account_name {
+		position: relative;
+		.click{
+			display: none;
+			position: absolute;
+		    right: 0px;
+		    top: 16px;
+		    width: 30px;
+		    height: 30px;
+		    text-align: right;
+		    z-index: 2;
+		    svg{
+		    	width: 20px;
+			    height: 20px;
+			    fill: var(--main-color);
+		    }
+			@media all and (max-width: 900px) {
+				display: block;
+			}
+		}
+		img {
+			width: 50px;
+			float: left;
+			border-radius: 50%;
+		}
+		.info {
+			width: calc(100% - 60px);
+			margin-left: 10px;
+			float: left;
+			padding-top: 2px;
+			.text {
+				color: #838383;
+				line-height: 20px;
+			}
+			.name {
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+	}
+	.account_affi {
+		margin-top: 20px;
+	}
+	.list_menu {
+		margin-top: 8px;
+
+		li {
+			transition: 0.5s;
+			@media all and (max-width: 900px) {
+				display: none;
+				// &:last-child{
+				// 	display: block;
+				// }
+			}
+			a {
+				width: 100%;
+				display: inline-block;
+				padding: 12px;
+				padding-left: 60px;
+				box-sizing: border-box;
+				position: relative;
+				svg {
+					fill: #9b9b9b;
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					left: 20px;
+					top: 8px;
+				}
+			}
+			&:hover {
+				background: #ececec;
+			}
+		}
+		.active {
+			background: #ececec;
+		}
+	}
+}

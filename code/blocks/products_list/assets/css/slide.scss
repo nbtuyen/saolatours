@@ -1,0 +1,33 @@
+.product_list_slide {
+    background: transparent;
+    border: none;
+    position: relative;
+    .owl-nav {
+        div {
+            position: absolute;
+            top: -40px;
+            font-size: 30px;
+            // opacity: 0.7;
+            transition: 0.5s;
+            color: #026639;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .owl-prev {
+            right: 30px;
+        }
+        .owl-next {
+            right: 0px;
+        }
+    }
+    .item {
+        width: 100%;
+        background: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .item-block {
+        width: calc(100% / 6);
+    }
+}

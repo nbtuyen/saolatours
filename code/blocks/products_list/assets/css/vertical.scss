@@ -1,0 +1,41 @@
+.block_products_list .item{
+ padding: 10px 0;
+ border-bottom: 1px solid #EEE;
+}
+.block_products_list .block_content {
+  padding: 10px;
+  box-sizing: border-box;
+  .item {
+    width: 100%;
+    float: none;
+    border-right: none;
+  }
+}
+.block_products_list .item .frame_img_cat {
+ float: left;
+ width: 100px;
+ margin-right: 10px;
+ box-sizing: border-box;
+}
+.block_products_list .item .frame_view {
+  width: calc(100% - 110px);
+  float: left;
+}
+
+.block_products_list .item .name {
+ font-weight: normal;
+}
+.block_products_list .item .warranty {
+  margin-top: 6px;
+  display: block;
+  font-size: 13px;
+  color: #333;
+}
+.block_products_list .item .price {
+  margin-top: 6px;
+  color: #DC0000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media all and (max-width: 500px) {bottom: 30px;right: 20px;}

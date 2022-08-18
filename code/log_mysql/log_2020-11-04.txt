@@ -1,0 +1,1185 @@
+
+================REMOTE: 127.0.0.1  (2020-11-04 09:27:44)===================
+
+================URL : /thiet-bi-ve-sinh-pc73.html===================
+
+================1604456864===================
+
+ SELECT *
+	FROM fs_redirect AS a 
+	WHERE redirect_from = 'http://hailinh.local/thiet-bi-ve-sinh-pc73.html' 
+	
+
+time:::0.00068211555480957
+
+===========
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00052213668823242
+
+===========
+
+ SELECT * FROM fs_config
+			WHERE is_common = 1
+			
+
+time:::0.0014288425445557
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+			WHERE module = "products" AND view = "cat" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.0010428428649902
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title,link_admin
+			FROM fs_blocks AS a 
+			WHERE published = 1 
+			ORDER BY ordering
+
+time:::0.001194953918457
+
+===========
+
+ SELECT id,alias,alias1,alias2
+					  FROM fs_products_categories 
+
+time:::0.0019381046295166
+
+===========
+
+ SELECT name,id,alias,parent_id,list_parents,seo_title,seo_keyword,seo_description,description,tablename,vat,level,parent_id, description,banner1, banner2, link_banner1,summary, link_banner2, name_banner1, name_banner2 ,image,icon,news_related,videos_related,alias1,alias2,name1,name2,nofollow
+					  FROM fs_products_categories
+					  WHERE published = 1  AND id = '73'  
+
+time:::0.00075101852416992
+
+===========
+
+ SELECT id,parent_id,alias,name,image_icon_cat,alias1,alias2,name1,name2,manufactory_related
+					  FROM fs_products_categories  WHERE published = 1 AND parent_id =73 ORDER BY ordering ASC
+
+time:::0.0028808116912842
+
+===========
+
+ SELECT id,parent_id,alias,name
+					  FROM fs_products_categories  WHERE published = 1 AND parent_id =73
+
+time:::0.00078701972961426
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%" ORDER BY ordering2 DESC,ordering DESC, id DESC LIMIT 0,16 
+
+time:::1.7881393432617E-5
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00065088272094727
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9049
+			
+
+time:::0.00066089630126953
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.0006868839263916
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9048
+			
+
+time:::0.00069499015808105
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00063014030456543
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9041
+			
+
+time:::0.00065302848815918
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00064182281494141
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9039
+			
+
+time:::0.00075602531433105
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00070905685424805
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9038
+			
+
+time:::0.00078296661376953
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00068807601928711
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9037
+			
+
+time:::0.00096607208251953
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00075411796569824
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9036
+			
+
+time:::0.00076794624328613
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00075888633728027
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9035
+			
+
+time:::0.00078511238098145
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00076603889465332
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9034
+			
+
+time:::0.00075292587280273
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:44' AND finished_time > '2020-11-04 09:27:44' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00091886520385742
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9033
+			
+
+time:::0.00081896781921387
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:45' AND finished_time > '2020-11-04 09:27:45' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00074505805969238
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 9032
+			
+
+time:::0.00076508522033691
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:45' AND finished_time > '2020-11-04 09:27:45' AND type = 1 ORDER BY ordering ASC
+
+time:::0.0014100074768066
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 8962
+			
+
+time:::0.00075197219848633
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:45' AND finished_time > '2020-11-04 09:27:45' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00072598457336426
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 8961
+			
+
+time:::0.0008997917175293
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:45' AND finished_time > '2020-11-04 09:27:45' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00073814392089844
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 8960
+			
+
+time:::0.00075197219848633
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:45' AND finished_time > '2020-11-04 09:27:45' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00072121620178223
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 8959
+			
+
+time:::0.00086498260498047
+
+===========
+
+ SELECT id,name, finished_time
+		FROM fs_sales
+		WHERE published = 1 AND started_time < '2020-11-04 09:27:45' AND finished_time > '2020-11-04 09:27:45' AND type = 1 ORDER BY ordering ASC
+
+time:::0.00073790550231934
+
+===========
+
+ SELECT s.price
+			FROM fs_sales_products as s INNER JOIN fs_products as p ON s.product_id = p.id
+			WHERE published = 1 AND sale_id = 4 AND p.id = 8958
+			
+
+time:::0.0007622241973877
+
+===========
+
+SELECT count(*)  	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%" 
+
+time:::0.061706066131592
+
+===========
+
+ SELECT *
+		FROM fs_videos
+		WHERE ID IN ( 519,517,518 )
+		AND published = 1  
+		ORDER BY  ordering DESC , id DESC
+		LIMIT 6
+		
+
+time:::0.00087809562683105
+
+===========
+
+SELECT id,name
+				 FROM fs_products_types
+				 WHERE  published = 1
+
+				 ORDER BY ordering
+			
+
+time:::0.00063085556030273
+
+===========
+
+SELECT name,id,alias,parent_id FROM fs_products_categories WHERE published =1 AND id IN (0,73,0) AND id <> 73
+		ORDER BY POSITION( concat(",",id,",") IN "0,73,0")
+
+time:::0.00084900856018066
+
+===========
+
+ SELECT id, name, alias
+					  FROM fs_products_categories  WHERE published =1 AND parent_id = 73 ORDER BY ordering ASC
+
+time:::0.0017049312591553
+
+===========
+
+ SELECT *
+					  FROM fs_manufactories  WHERE show_product_special_cat = 1 AND published = 1 ORDER BY ordering ASC
+
+time:::0.0014839172363281
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 98 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.001878023147583
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 95 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.011520862579346
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 97 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.013828992843628
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 74 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.011698007583618
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 72 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.015957117080688
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 73 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0069849491119385
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 96 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0035150051116943
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 94 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.011651039123535
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 93 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0069420337677002
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 109 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.007451057434082
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 92 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0087831020355225
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 104 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.002795934677124
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 165 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.00130295753479
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 166 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0013689994812012
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 168 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.00072097778320312
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 170 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0013799667358398
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 171 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.00092792510986328
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 172 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0017449855804443
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 173 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.00118088722229
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 175 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.00098705291748047
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 176 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0010440349578857
+
+===========
+
+ SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type 	FROM fs_products AS a
+		WHERE published = 1 AND is_trash = 0 AND category_id_wrapper like "%,73,%"  AND show_product_special_cat = 1 AND manufactory = 186 ORDER BY ordering ASC, id DESC  LIMIT 12
+
+time:::0.0021960735321045
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_products_categories_slideshow
+					WHERE published = 1  AND category_id IN (73)
+					ORDER BY ordering 
+
+time:::0.0011429786682129
+
+===========
+
+  SELECT id,name,alias,category_alias,category_id ,image,price,price_old,quantity,alias,discount,types,is_hot,is_new,style_types,type FROM fs_products WHERE alias = ''
+
+time:::0.053493022918701
+
+===========
+
+SELECT id,name
+                 FROM fs_products_types
+                 WHERE  published = 1
+
+                 ORDER BY ordering
+            
+
+time:::0.00066089630126953
+
+===========
+
+  SELECT * 
+						FROM fs_products_categories
+						WHERE published = 1 AND parent_id = 73 LIMIT 15
+
+time:::0.0011050701141357
+
+===========
+
+  SELECT * 
+						FROM fs_news_categories
+						WHERE published = 1 AND parent_id = 0
+
+time:::0.00075793266296387
+
+===========
+
+SELECT id,link, name, alias, level, parent_id as parent_id, target,group_id, description,icon,image,show_filter
+				FROM fs_menus_items
+				WHERE published  = 1 AND (is_mobile <> 1 OR is_mobile IS NULL) AND group_id = 23
+				ORDER BY ordering ASC
+
+time:::0.003911018371582
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1037 ORDER BY ordering ASC
+
+time:::0.0012152194976807
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1036 ORDER BY ordering ASC
+
+time:::0.0010430812835693
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1039 ORDER BY ordering ASC
+
+time:::0.0013031959533691
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1111 ORDER BY ordering ASC
+
+time:::0.0010478496551514
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1110 ORDER BY ordering ASC
+
+time:::0.0021188259124756
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1142 ORDER BY ordering ASC
+
+time:::0.0012049674987793
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1112 ORDER BY ordering ASC
+
+time:::0.001622200012207
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1071 ORDER BY ordering ASC
+
+time:::0.0013530254364014
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1077 ORDER BY ordering ASC
+
+time:::0.0010018348693848
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1082 ORDER BY ordering ASC
+
+time:::0.00090289115905762
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1085 ORDER BY ordering ASC
+
+time:::0.001971960067749
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1090 ORDER BY ordering ASC
+
+time:::0.00095987319946289
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1094 ORDER BY ordering ASC
+
+time:::0.0009911060333252
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1098 ORDER BY ordering ASC
+
+time:::0.00067996978759766
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1100 ORDER BY ordering ASC
+
+time:::0.0014569759368896
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1101 ORDER BY ordering ASC
+
+time:::0.0012519359588623
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1067 ORDER BY ordering ASC
+
+time:::0.00095701217651367
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1040 ORDER BY ordering ASC
+
+time:::0.0010569095611572
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1041 ORDER BY ordering ASC
+
+time:::0.0022170543670654
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1125 ORDER BY ordering ASC
+
+time:::0.00096797943115234
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1133 ORDER BY ordering ASC
+
+time:::0.00088095664978027
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1137 ORDER BY ordering ASC
+
+time:::0.00081801414489746
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1143 ORDER BY ordering ASC
+
+time:::0.00069499015808105
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1144 ORDER BY ordering ASC
+
+time:::0.00073099136352539
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1145 ORDER BY ordering ASC
+
+time:::0.00067496299743652
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1147 ORDER BY ordering ASC
+
+time:::0.00066995620727539
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1148 ORDER BY ordering ASC
+
+time:::0.00078701972961426
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1149 ORDER BY ordering ASC
+
+time:::0.00081706047058105
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1150 ORDER BY ordering ASC
+
+time:::0.0008389949798584
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1151 ORDER BY ordering ASC
+
+time:::0.00078511238098145
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1152 ORDER BY ordering ASC
+
+time:::0.00082302093505859
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1153 ORDER BY ordering ASC
+
+time:::0.00079011917114258
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1154 ORDER BY ordering ASC
+
+time:::0.00070405006408691
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1155 ORDER BY ordering ASC
+
+time:::0.00079917907714844
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1215 ORDER BY ordering ASC
+
+time:::0.00094389915466309
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1176 ORDER BY ordering ASC
+
+time:::0.00072908401489258
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1177 ORDER BY ordering ASC
+
+time:::0.0012750625610352
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1178 ORDER BY ordering ASC
+
+time:::0.00066900253295898
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1219 ORDER BY ordering ASC
+
+time:::0.00081396102905273
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1223 ORDER BY ordering ASC
+
+time:::0.00068116188049316
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1179 ORDER BY ordering ASC
+
+time:::0.0014300346374512
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1180 ORDER BY ordering ASC
+
+time:::0.00088620185852051
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1181 ORDER BY ordering ASC
+
+time:::0.0006868839263916
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1198 ORDER BY ordering ASC
+
+time:::0.00077009201049805
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1200 ORDER BY ordering ASC
+
+time:::0.0010979175567627
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1201 ORDER BY ordering ASC
+
+time:::0.00086188316345215
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1202 ORDER BY ordering ASC
+
+time:::0.0008690357208252
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1203 ORDER BY ordering ASC
+
+time:::0.00097203254699707
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1204 ORDER BY ordering ASC
+
+time:::0.00098609924316406
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1205 ORDER BY ordering ASC
+
+time:::0.00066900253295898
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1206 ORDER BY ordering ASC
+
+time:::0.00067687034606934
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1207 ORDER BY ordering ASC
+
+time:::0.0010750293731689
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1216 ORDER BY ordering ASC
+
+time:::0.00066590309143066
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1191 ORDER BY ordering ASC
+
+time:::0.00088882446289062
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1194 ORDER BY ordering ASC
+
+time:::0.00080204010009766
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1195 ORDER BY ordering ASC
+
+time:::0.001323938369751
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1196 ORDER BY ordering ASC
+
+time:::0.00073695182800293
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1197 ORDER BY ordering ASC
+
+time:::0.00073885917663574
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1217 ORDER BY ordering ASC
+
+time:::0.00072407722473145
+
+===========
+
+  SELECT * 
+						FROM fs_menus_items
+						WHERE published = 1 AND group_id = 23 AND parent_id =1218 ORDER BY ordering ASC
+
+time:::0.00075888633728027
+
+===========
+
+  SELECT * 
+		FROM fs_news_categories
+		WHERE published = 1 AND parent_id = 0
+
+time:::0.00082087516784668
+
+===========
+
+ SELECT id,image,show_hot,show_dot,link, name, level, parent_id as parent_id, target, description,nofollow, icon
+			FROM fs_menus_items
+			WHERE published  = 1 AND ( is_mobile <> 1 OR is_mobile IS NULL)
+			AND group_id = 2 
+			ORDER BY ordering
+
+time:::0.0022139549255371
+
+===========
+
+  SELECT name,id,alias,tablename
+			FROM fs_products_categories 
+			WHERE published = 1 
+			
+
+time:::0.0015239715576172
+
+===========
+
+ SELECT *
+			FROM fs_products_filters
+			WHERE published = 1
+			ORDER BY is_common DESC, field_ordering,ordering,filter_show ASC
+
+time:::0.023019790649414
+
+===========
+
+ SELECT *
+						  FROM fs_strengths_categories
+						 WHERE  published = 1  AND id = 54
+						 ORDER BY  ordering ASC 
+						 
+
+time:::0.0019159317016602
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1  AND category_id = 54
+						 ORDER BY  ordering ASC 
+						 LIMIT 3 
+						 
+
+time:::0.00076889991760254
+
+===========
+
+ SELECT *
+					  FROM fs_address
+					  WHERE published = 1
+					   
+					  ORDER BY ordering ASC
+					 
+
+time:::0.0011260509490967
+
+===========
+
+  SELECT * 
+						FROM fs_products_categories
+						WHERE published = 1 AND parent_id = 73 LIMIT 15
+
+time:::0.0017459392547607
+
+===========
+
+  SELECT * 
+						FROM fs_news_categories
+						WHERE published = 1 AND parent_id = 0
+
+time:::0.00080299377441406
+
+===========
+
+SELECT id,link, name, alias, level, parent_id as parent_id, target,group_id, description,icon,image,show_filter
+				FROM fs_menus_items
+				WHERE published  = 1 AND (is_mobile <> 1 OR is_mobile IS NULL) AND group_id = 19
+				ORDER BY ordering ASC
+
+time:::0.0013799667358398
+
+===========

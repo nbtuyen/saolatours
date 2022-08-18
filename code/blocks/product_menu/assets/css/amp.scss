@@ -1,0 +1,39 @@
+#product_menu_sidebar{
+	    width: 100%;
+    background: #ea2e20a6;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .close-nav-wrapper {
+	    text-align: left;
+	    .close-nav {
+		       font-size: 12px;
+		    background: #ea2e20a6;
+		    letter-spacing: 1px;
+		    display: inline-block;
+		    padding: 10px;
+		    border-radius: 100px;
+		    line-height: 8px;
+		    margin: 8px 0;
+		    color: #fff;
+		    font-weight: bold;
+		    cursor: pointer;
+		}
+	}
+	ul{
+		li{
+			width: 100%;
+		    list-style: none;
+		    a{
+		    	color: #FFF;
+			    text-decoration: none;
+			    /* text-transform: uppercase; */
+			    display: block;
+			    padding: 7px 0;
+			    margin-bottom: 4px;
+			    position: relative;
+		    }
+
+		}
+	}
+
+}

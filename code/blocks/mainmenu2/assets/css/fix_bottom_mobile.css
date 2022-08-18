@@ -1,0 +1,2 @@
+.fix_bottom_mobile{position:fixed;bottom:0px;z-index:10;background:var(--main-color);width:100%;display:none}@media all and (max-width: 500px){.fix_bottom_mobile{display:block}}.fix_bottom_mobile .all-item{display:flex}.fix_bottom_mobile .item{text-align:center;width:100%;padding:5px 3px}.fix_bottom_mobile .item .icon{display:block}.fix_bottom_mobile .item .icon svg{width:18px;height:18px;fill:#fff}.fix_bottom_mobile .item .name{display:block;color:#fff;font-size:13px}
+/*# sourceMappingURL=fix_bottom_mobile.css.map */

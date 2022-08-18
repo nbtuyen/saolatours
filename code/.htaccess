@@ -1,0 +1,290 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+
+RewriteCond %{HTTP_HOST} ^([^/.]+)\.lapnano\.local$ 
+RewriteCond %1 !^(www|ftp|mail)$ [NC]
+RewriteRule ^(.*)$ index.php?module=template&alias=%1&raw=1 [L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)
+RewriteRule (.*) http://%1/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.(.+) [NC]
+RewriteRule ^(.*) http://%1/$1 [R=301,NE,L]
+
+
+AddType text/x-component .htc
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^(index.php|index.html)$ index.php?module=products&view=home&Itemid=1&lang=vi[L]
+RewriteRule ^&tmpl=1$ index.php?module=home&view=home&Itemid=1&lang=vi&tmpl=1[L]
+RewriteRule ^$ index.php?module=home&view=home&Itemid=1&lang=vi&%{QUERY_STRING} [L]
+RewriteRule ^$ index.php?lang=vi [L]
+
+
+
+#new
+RewriteRule ^tin-tuc(-page([0-9]*)).html$ index.php?module=news&view=home&ccode=$1&Itemid=4&page=$2 [L]
+RewriteRule ^tin-tuc.html$ index.php?module=news&view=home&Itemid=2 [L]
+RewriteRule ^tim-kiem-tin-tuc/([^/]*)(-page([0-9]*)).html(.*) index.php?module=news&view=search&keyword=$1&Itemid=2&page=$3 [L]
+RewriteRule ^tim-kiem-tin-tuc/([^/]*).html(.*) index.php?module=news&view=search&keyword=$1&Itemid=2 [L]
+RewriteRule ^([^/]*)-kn([0-9]*)(-page([0-9]*))?.html$ index.php?module=news&view=cat&ccode=$1&cid=$2&Itemid=3&page=$4&%{QUERY_STRING} [L]
+RewriteRule ^([^/]*)/([^/]*)-n([0-9]*).html$ index.php?module=news&view=news&ccode=$1&code=$2&id=$3&Itemid=4&%{QUERY_STRING} [L]
+
+
+
+#contents
+RewriteRule ^danh-muc/([^/]*)(-page([0-9]*)).html$ index.php?module=content&view=cat&ccode=$1&Itemid=7&page=$3 [L]
+RewriteRule ^danh-muc/([^/]*).html$ index.php?module=contents&view=cat&ccode=$1&Itemid=7 [L]
+RewriteRule ^ct-([^/]*).html$ index.php?module=contents&view=contents&code=$1&Itemid=8&lang=vi&$3  [L]
+RewriteRule ^ce-([^/]*).html$ index.php?module=contents&view=contents&code=$1&Itemid=8&lang=en&$3 [L]
+
+
+
+#products
+
+RewriteRule ^thuong-hieu(-page([0-9]*))?.html(.*) index.php?module=products&view=manufactories&Itemid=12&page=$2&$2 [L]
+
+RewriteRule ^([^/]*)-mn([0-9]*)(-page([0-9]*))?.html$ index.php?module=products&view=manufactory&code=$1&id=$2&ccode=$1&page=$4&Itemid=13&%{QUERY_STRING}  [L]
+
+RewriteRule ^([^/]*)-mc([0-9]*).html$ index.php?module=products&view=merge_category&code=$1&id=$2&Itemid=133&%{QUERY_STRING} [L]
+
+RewriteRule ^combo(-page([0-9]*))?.html(.*) index.php?module=products&view=combo&page=$2&Itemid=24&$1&%{QUERY_STRING}  [L]
+
+
+RewriteRule ^([^/]*)-pcm([0-9]*)(/([^/]*)-dlt)?(/sap-xep-([^/]*))?\-page([0-9]*).html$ index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$4&Itemid=9&checkmanu=1&sort=$6&page=$7&%{QUERY_STRING}   [L]
+
+RewriteRule ^([^/]*)-pcm([0-9]*)(/([^/]*)-dlt)?(/sap-xep-([^/]*))?.html$ index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$4&Itemid=9&checkmanu=1&sort=$6&%{QUERY_STRING}   [L]
+
+RewriteRule ^([^/]*)-pcm([0-9]*)/([^/]*)-dlt.html$ index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$3&Itemid=9&checkmanu=1&%{QUERY_STRING}   [L]
+
+RewriteRule ^([^/]*)-([^/]*)-pcm([0-9]*)/([^/]*)-dlt.html$ index.php?module=products&view=cat&ccode=$1&manu=$2&cid=$3&filter=$4&Itemid=9&checkmanu=1&%{QUERY_STRING}   [L]
+
+RewriteRule ^([^/]*)-pcm([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&Itemid=9&checkmanu=1&page=$4&$5  [L]
+
+RewriteRule ^([^/]*)-([^/]*)-pcm([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&manu=$2&cid=$3&Itemid=9&checkmanu=1&$3  [L]
+
+
+
+RewriteRule ^([^/]*)-pc([0-9]*)(/([^/]*)-dlt)?(/sap-xep-([^/]*))?\-page([0-9]*).html$ index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$4&Itemid=9&sort=$6&page=$7&%{QUERY_STRING}   [L]
+RewriteRule ^([^/]*)-pc([0-9]*)(/([^/]*)-dlt)?(/sap-xep-([^/]*))?.html$ index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$4&Itemid=9&sort=$6&%{QUERY_STRING}   [L]
+
+RewriteRule ^([^/]*)-pc([0-9]*)/([^/]*)-dlt.html$ index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$3&Itemid=9&%{QUERY_STRING}   [L]
+RewriteRule ^([^/]*)-([^/]*)-pc([0-9]*)/([^/]*)-dlt.html$ index.php?module=products&view=cat&ccode=$1&manu=$2&cid=$3&filter=$4&Itemid=9&%{QUERY_STRING}   [L]
+
+RewriteRule ^([^/]*)-pc([0-9]*)(-page([0-9]*)).html(.*) index.php?module=products&view=cat&ccode=$1&Itemid=9&page=$4&$5  [L]
+RewriteRule ^([^/]*)-([^/]*)-pc([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&manu=$2&cid=$3&Itemid=9&$3&%{QUERY_STRING}  [L]
+
+RewriteRule ^tags/([^/]*)-page([0-9]*).html(.*) index.php?module=products&view=tags&code=$1&page=$2&Itemid=9 [L]
+RewriteRule ^tags/([^/]*).html(.*) index.php?module=products&view=tags&code=$1&Itemid=9&$2 [L]
+
+
+
+RewriteRule ^san-pham-ajax/([^/]*)-([0-9]*)/loc-([^/]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&filter=$3&task=fetch_pages&raw=1&Itemid=34&$4  [L]
+RewriteRule ^san-pham-ajax/([^/]*)-([0-9]*).html(.*) index.php?module=products&view=cat&ccode=$1&cid=$2&Itemid=9&task=fetch_pages&raw=1&$3  [L]
+
+RewriteRule ^add_comment_amp.html index.php?module=comments&view=comments&task=save_comment_amp&raw=1 [L]
+
+
+
+RewriteRule ^ggshp.xml index.php?module=google_shopping&view=google_shopping&type=google_shopping&raw=1 [L]
+RewriteRule ^qcfacebook.xml index.php?module=qcfacebook&view=qcfacebook&type=qcfacebook&raw=1 [L]
+
+
+
+#single_url_product
+RewriteRule ^([^/]*)/([^/]*)-p([0-9]*).html$ index.php?module=products&view=product&code=$2&id=$3&ccode=$1&Itemid=10&%{QUERY_STRING}  [L]
+
+RewriteRule ^tim-kiem/([^/]*).html(.*) index.php?module=products&view=search&keyword=$1&Itemid=9&$2 [L] 
+
+RewriteRule ^tim-kiem/([^/]*)/cat-([^/]*)/manf-([^/]*)-page([0-9]*).html(.*) index.php?module=products&view=search&keyword=$1&cat=$2&manf=$3&page=$4&Itemid=9&%{QUERY_STRING}[L] 
+
+RewriteRule ^tim-kiem/([^/]*)/cat-([^/]*)/manf-([^/]*).html(.*) index.php?module=products&view=search&keyword=$1&cat=$2&manf=$3&Itemid=9&%{QUERY_STRING} [L] 
+
+
+RewriteRule ^tim-kiem-ajax/([^/]*).html(.*) index.php?module=products&view=search&keyword=$1&Itemid=9&task=fetch_pages&raw=1&$2 [L] 
+
+
+RewriteRule ^khuyen-mai(-page([0-9]*)).html(.*) index.php?module=products&view=hotdeal&Itemid=9&page=$2&$2 [L] 
+RewriteRule ^khuyen-mai.html(.*) index.php?module=products&view=hotdeal&Itemid=9&$2 [L]
+
+RewriteRule ^san-pham-ban-chay(-page([0-9]*)).html(.*) index.php?module=products&view=sell&Itemid=9&page=$2&$2 [L] 
+RewriteRule ^san-pham-ban-chay.html(.*) index.php?module=products&view=sell&Itemid=9&$2 [L]
+
+
+RewriteRule ^san-pham-hot(-page([0-9]*)).html(.*) index.php?module=products&view=hot&Itemid=9&page=$2&$2 [L] 
+RewriteRule ^san-pham-hot.html(.*) index.php?module=products&view=hot&Itemid=9&$2 [L]
+
+RewriteRule ^san-pham-khuyen-mai(-page([0-9]*)).html(.*) index.php?module=products&view=promotion&Itemid=9&page=$2&$2 [L] 
+RewriteRule ^san-pham-khuyen-mai.html(.*) index.php?module=products&view=promotion&Itemid=9&$2 [L]
+
+
+RewriteRule ^so-sanh-giua-([^/]*)-cp([0-9]*)?(-([0-9]*))?(-([0-9]*))?(-([0-9]*))?.html index.php?module=products&view=compare&code=$1&id[]=$2&id[]=$4&id[]=$6&id[]=$8&Itemid=38 [L]
+
+RewriteRule ^export-pdf.html index.php?module=products&view=compare&task=export_pdf&raw=1&Itemid=38 [L]
+
+#RewriteRule ^store.html(.*) index.php?module=products&view=home&Itemid=24&$1&%{QUERY_STRING}  [L]
+RewriteRule ^gio-hang.html$ index.php?module=products&view=cart&task=shopcart&Itemid=11&action=gio-hang  [L]
+RewriteRule ^thanh-toan.html$ index.php?module=products&view=cart&task=shopcart&Itemid=11&action=thanh-toan  [L]
+
+RewriteRule ^ket-thuc-don-hang-([0-9]*).html$ index.php?module=products&view=cart&task=finished&id=$1&Itemid=11&%{QUERY_STRING}  [L]
+
+
+RewriteRule ^xoa-san-pham-([0-9]*).html$ index.php?module=products&view=cart&task=edel&id=$1&Itemid=11  [L]
+
+
+
+
+#contact
+RewriteRule ^lien-he.html$ index.php?module=contact&Itemid=43 [L]
+
+#sitemap
+RewriteRule ^site-map.html(.*) index.php?module=sitemap&view=sitemap&Itemid=16 [L]
+
+#rss
+RewriteRule ^rss.xml$ rss.php [L]
+RewriteRule ^feeds$ rss.php [L]
+RewriteRule ^feeds-remarketing.xml$ rss.php?remarketing=1 [L]
+RewriteRule ^feeds-instant-articles$ rss.php?instant_articles=1 [L]
+
+
+#sitemap_v2
+RewriteRule ^sitemap.xml index.php?module=sitemap&view=sitemap&raw=1 [L]
+RewriteRule ^sitemap-([^/]*)-spc([0-9]*).xml$ index.php?module=sitemap&view=sitemap&task=show_products&ccode=$1&cid=$2&raw=1 [L]
+RewriteRule ^sitemap-([^/]*)-bpc([0-9]*).xml$ index.php?module=sitemap&view=sitemap&task=show_datsan&ccode=$1&cid=$2&raw=1 [L]
+
+
+
+#genarate sitemap
+#RewriteRule ^genarate_sitemap.xml index.php?module=sitemap_auto&view=sitemap_auto&raw=1 [L]
+RewriteRule ^sitemap_video.xml index.php?module=sitemap_auto&view=sitemap_auto&type=video&raw=1 [L]
+RewriteRule ^sitemap_video_cat.xml index.php?module=sitemap_auto&view=sitemap_auto&type=video_cat&raw=1 [L]
+RewriteRule ^sitemap_news.xml index.php?module=sitemap_auto&view=sitemap_auto&type=news&raw=1 [L]
+RewriteRule ^sitemap_news_cat.xml index.php?module=sitemap_auto&view=sitemap_auto&type=news_cat&raw=1 [L]
+RewriteRule ^sitemap_contents.xml index.php?module=sitemap_auto&view=sitemap_auto&type=contents&raw=1 [L]
+RewriteRule ^sitemap_product.xml index.php?module=sitemap_auto&view=sitemap_auto&type=product&raw=1 [L]
+RewriteRule ^sitemap_product_cat.xml index.php?module=sitemap_auto&view=sitemap_auto&type=product_cat&raw=1 [L]
+RewriteRule ^sitemap_datsan_cat.xml index.php?module=sitemap_auto&view=sitemap_auto&type=datsan_cat&raw=1 [L]
+
+#videos
+RewriteRule ^video.html(-page([0-9]*)).html$ index.php?module=videos&view=home&page=$2 [L]
+RewriteRule ^video.html$ index.php?module=videos&view=home&Itemid=30 [L]
+
+
+RewriteRule ^([^/]*)-cv([0-9]*)(-page([0-9]*)).html$ index.php?module=videos&view=cat&ccode=$1&cid=$2&Itemid=30&page=$4 [L]
+RewriteRule ^([^/]*)-cv([0-9]*).html$ index.php?module=videos&view=cat&ccode=$1&cid=$2&Itemid=30 [L]
+
+RewriteRule ^([^/]*)-vd([0-9]*).html$ index.php?module=videos&view=video&code=$1&id=$2&Itemid=31&$3  [L]
+
+
+
+RewriteRule ^robots.txt$ robots.txt [L]
+RewriteRule ^sitemap.xml$ sitemap.xml [L]
+
+RewriteRule ^404.html index.php?module=notfound&view=notfound&Itemid=1000 [L]
+
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !\.(jpg|gif|ico|webp)$
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+
+<Ifmodule mod_php4.c>
+	php_value error_log "/home/admin/__processed_stats/gallewatch.com.phplog"
+	php_value upload_max_filesize 2M
+	php_value max_execution_time  30
+	php_value max_input_time  60
+	php_value memory_limit  32M
+	php_value post_max_size  8M
+	php_flag register_globals  off
+	php_flag display_errors  off
+	php_flag file_uploads  on
+	php_flag log_errors  off
+	php_flag output_buffering  off
+	php_flag register_argc_argv  on
+	php_flag magic_quotes_gpc   off
+	php_flag magic_quotes_runtime  off
+	php_flag magic_quotes_sybase  off
+	php_flag mysql.allow_persistent  off
+	php_flag register_long_arrays  on
+	php_flag allow_url_fopen  on
+	php_flag cgi.force_redirect  on
+	php_flag enable_dl  on
+</Ifmodule>
+
+<Ifmodule mod_php5.c>
+	php_value error_log "/home/admin/__processed_stats/gallewatch.com.phplog"
+	php_value upload_max_filesize 2M
+	php_value max_execution_time  30
+	php_value max_input_time  60
+	php_value memory_limit  32M
+	php_value post_max_size  8M
+	php_flag register_globals  off
+	php_flag display_errors  off
+	php_flag file_uploads  on
+	php_flag log_errors  off
+	php_flag output_buffering  off
+	php_flag register_argc_argv  on
+	php_flag magic_quotes_gpc   off
+	php_flag magic_quotes_runtime  off
+	php_flag magic_quotes_sybase  off
+	php_flag mysql.allow_persistent  off
+	php_flag register_long_arrays  on
+	php_flag allow_url_fopen  on
+	php_flag cgi.force_redirect  on
+	php_flag enable_dl  on
+</Ifmodule>
+
+###End Kloxo PHP config Area
+
+Redirect 301 /checkcode.gallewatch.com http://checkcode.gallewatch.com
+
+# Configures the caching expiry date for browser caching of static files.
+  AddType application/vnd.ms-fontobject .eot 
+  AddType application/x-font-ttf .ttf
+  AddType application/x-font-opentype .otf
+  AddType application/x-font-woff .woff
+  AddType image/svg+xml .svg
+<IfModule mod_expires.c>
+    <FilesMatch ".(jpg|jpeg|gif|png|mp3|flv|mov|avi|3pg|html|htm|swf|pdf|js|css|ico|mp4|ttf|)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+		
+		 ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+		  ExpiresByType application/x-font-ttf "access plus 1 year"
+		  ExpiresByType application/x-font-opentype "access plus 1 year"
+		  ExpiresByType application/x-font-woff "access plus 1 year"
+		  ExpiresByType image/svg+xml "access plus 1 year"
+  
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+
+<FilesMatch ".(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+</IfModule>
+

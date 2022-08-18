@@ -1,0 +1,46 @@
+.share_fast{
+    text-align: center;
+    margin-top: 26px;
+    @media screen and (max-width: 450px){
+        margin-top: 15px;
+    }
+}
+.share_fast a {
+    display: inline-flex;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: #FFF;
+    text-align: center;
+    -moz-transition: all 0.2s ease-in 0;
+    -webkit-transition: all 0.2s ease-in;
+    -webkit-transition-delay: 0;
+    transition: all 0.2s ease-in 0;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: #fff;
+    margin: 0px 6px;
+    @media screen and (max-width: 450px){
+        width: 32px;
+        height: 32px;
+    }
+    svg{
+        width: 16px;
+        height: 16px;
+        fill: #555555;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover{
+        background: var(--main-color);
+        svg{
+            fill:#fff;
+        }
+    }
+}

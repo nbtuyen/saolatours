@@ -1,0 +1,20 @@
+.product_list_default {
+	.item {
+		width: 45%;
+	    float: left;
+	    background: white;
+	    margin-right: 50px;
+	    .product_image {
+	    	float: left;
+	    }
+	}
+	.item_special {
+		width:calc(100% / 3);
+	}
+}
+
+.product_list_new  {
+	.item_special {
+		float: right;
+	}
+}

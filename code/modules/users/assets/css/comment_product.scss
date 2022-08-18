@@ -1,0 +1,33 @@
+ .comment_nows{
+    margin-top: 15px;
+    color: #fff;
+     font-size: 14px;
+    .comment{
+        padding: 7px 15px;
+        color: #000;
+        background: var(--main-color);
+        display: inline-block;
+        &:hover{
+            background: var(--extra-color);
+            color: #fff;
+        }
+    }
+    .comment_re{
+        color: #ffb26f;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+ }
+ .product_grid .name {
+    -webkit-line-clamp: 2;
+        height: 50px;
+ }
+ .user_content .product_grid_2{
+    background: #230d03;
+    padding: 10px 10px 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    @media all and (max-width: 768px) {
+        padding: 0px;
+    }
+ }

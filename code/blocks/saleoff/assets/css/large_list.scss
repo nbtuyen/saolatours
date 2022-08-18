@@ -1,0 +1,305 @@
+.saleoff-large-list{
+	.block_title_wrap_center{
+		text-align: center;
+		margin-bottom: 70px;
+		@media all and (max-width: 550px) {
+			margin-bottom: 40px;
+		}
+	}
+	.block_title_wrap{
+		font-size: 36px;
+	    line-height: 36px;
+	    display: inline-block;
+	    box-shadow: #64646f33 0px 7px 29px 0px;
+	    padding: 3px 4px 3px 20px;
+	    transform: skewX(342deg);
+		.title{
+		    text-transform: uppercase;
+		    color: var(--sub-color);
+		    font-family: 'LexendBold';
+		    float: left;
+		    padding: 12px 20px;
+		    transform: skewX(17deg);
+		}
+		.time-dow-hotdeal{
+			float: left;
+		    font-family: 'LexendLight';
+		    background: var(--sub-color);
+		    color: #fff;
+		    padding: 12px 10px;
+		    div{
+		    	display: inline-block;
+			    transform: skewX(6deg);
+			    float: left;
+			    margin-right: 8px;
+			    #sec_h,&:last-child{
+			    	margin-right: 0px;
+			    }
+		    }
+		}
+		@media all and (max-width: 768px){
+			font-size: 24px;
+    		line-height: 24px;
+    	}
+
+    	@media all and (max-width: 600px){
+    		box-shadow:none;
+    		padding:0px;
+    		.title,.time-dow-hotdeal{
+    			float: none;
+    		}
+    	}
+
+    	@media all and (max-width: 420px){
+		    font-size: 20px;
+			line-height: 22px;
+			.time-dow-hotdeal{
+				padding: 6px 10px;
+			}
+		}
+	}
+
+	.saleoff-large-left{
+		width: 50%;
+	    float: left;
+	    position: relative;
+	    padding-right: 70px;
+	    box-sizing: border-box;
+	    @media all and (max-width: 1024px){
+	    	display: none;
+	    	float: none;
+	    }
+	}
+
+	.is_new,.is_promotion{
+	    width: 46px;
+	    height: 46px;
+	    border-radius: 50%;
+	    text-align: center;
+	    text-transform: uppercase;
+	    display: inline-block;
+	    color: #fff;
+	    padding-top: 15px;
+	    box-sizing: border-box;
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    background: #fead00;
+	    font-size: 13px;
+	    // font-family: LexendLight;
+	}
+
+	.is_promotion{
+		background: var(--sub-color);
+		left: 46px;
+	}
+	.is_promotion_l0{
+		left: 0px;
+	}
+
+	.name{
+		margin-bottom: 18px;
+		a{
+			font-size: 19px;
+    		line-height: 26px;
+    		font-family: 'LexendLight';
+		}
+		@media all and (max-width: 768px) {
+			margin-bottom: 10px;
+			a{
+				font-size: 16px;
+    			line-height: 22px;
+			}
+		}
+		@media all and (max-width: 420px) {
+			a{
+				font-size: 14px;
+    			line-height: 20px;
+    		}
+    	}
+	}
+	.price_arae{
+		.price_current{
+			font-size: 30px;
+		}
+		.price_old{
+			font-size: 22px;
+    		margin-left: 10px;
+    		font-family: 'LexendMedium';
+		}
+	}
+
+	.btn-item{
+		margin-top: 22px;
+		a{
+			display: inline-block;
+		    color: #fff;
+		    background: var(--main-color);
+		    text-transform: uppercase;
+		    padding: 9px 38px 8px;
+		    font-size: 16px;
+		    border-radius: 25px;
+		    float: left;
+		    transition: 0.3s;
+		    border: 1px solid transparent;
+		    &:hover{
+	            background:#fff;
+	            color: #222;
+	            border: 1px solid #fce0b7c7;
+	            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	        }
+	        @media all and (max-width: 990px) {
+        	    padding: 7px 16px 6px;
+				font-size: 14px;
+			}
+		}
+
+		.btn-advise{
+			background: #a4a4a4;
+    		margin-left: 8px;
+		}
+	}
+
+
+	.saleoff-large-right{
+		width: 50%;
+		float: right;
+		@media all and (max-width: 1024px) {
+			width: 100%;
+			float: none;
+		}
+		.item{
+		   	padding: 20px 20px 0px 20px;
+		    box-sizing: border-box;
+		    position: relative;
+		    transition: 0.3s;
+		    &:hover{
+		    	box-shadow: #64646f33 0px 7px 29px 0px;
+		    	.btn-item{
+		    		opacity: 1;
+		    	}
+		    }
+
+		    .is_new,.is_promotion{	
+			    font-size: 11px;
+			    width: 38px;
+			    height: 38px;
+			    padding-top: 10px;
+			    top: 20px;
+			}
+
+			.is_new{
+				left: 20px;
+			}
+			.is_promotion{
+				left: 58px;
+			}
+			@media all and (max-width: 1024px) {
+				width: 50%;
+    			float: left;
+    		}
+    		@media all and (max-width: 768px){
+				padding: 20px;
+    		}
+    		@media all and (max-width: 500px){
+				padding: 10px;
+				.is_new,.is_promotion{
+					font-size: 10px;
+				    width: 32px;
+				    height: 32px;
+				    padding-top: 8px;
+				}
+				.is_new{
+					left: 10px;
+				}
+				.is_promotion{
+					left: 42px;
+				}
+    		}
+
+		}
+		.product_image{
+			width: 200px;
+			float: left;
+		}
+		.content-right{
+			width: calc(100% - 200px);
+			float: right;
+		}
+		.price_arae{
+			.price_current{
+				font-size: 22px;
+			}
+			.price_old{
+				font-size: 18px;
+			}
+			@media all and (max-width: 768px) {
+				.price_current{
+					font-size: 16px;
+				}
+				.price_old{
+					font-size: 14px;
+				}
+			}
+
+			@media all and (max-width: 550px) {
+				.price_old{
+					display: block;
+    				margin-left: 0px;
+				}
+			}
+			@media all and (max-width: 420px) {
+				.price_current{
+					font-size: 14px;
+				}
+				.price_old{
+					font-size: 12px;
+				}
+			}
+		}
+		.btn-item{
+			opacity: 0;
+			transition: 0.5s;
+			a{
+				font-size: 14px;
+    			padding: 8px 26px 7px;
+			}
+		}
+
+		@media all and (max-width: 768px){
+			.product_image{
+				width: 100%;
+				float: none;
+			}
+			.content-right{
+				width: 100%;
+				float: none;
+			}
+			.btn-item{
+				display: none;
+			}
+
+		}
+	}
+
+	.btn-register-bl{
+		a{
+			background: #ededed;
+		    color: #3b3b3b;
+		    text-transform: unset;
+		    padding: 10px 10px 10px;
+		    font-size: 16px;
+		    font-family: 'LexendBold';
+		    &:hover{
+	            background:#fff;
+	            color: #222;
+	            border: 1px solid #fce0b7c7;
+	            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	        }
+	        @media all and (max-width: 500px){
+	        	padding: 7px 5px;
+    			font-size: 14px;
+	        }
+		}
+	}
+}

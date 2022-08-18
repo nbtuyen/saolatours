@@ -1,0 +1,106 @@
+.shopcart_simple {
+	position: relative;
+  cursor: pointer;
+  &:hover{
+    .item-pro{
+      display:block;
+    }
+  }
+  .item-pro{
+    position: absolute;
+    width: 320px;
+    right: 0px;
+    top: 27px;
+    z-index: 2222;
+    padding-top: 19px;
+    display: none;
+    transition: 0.2s;
+    .table-wrap{
+      background: #fff;
+      padding: 15px 10px 10px;
+      /* box-shadow: 0 0 8px #ddd !important; */
+      border: 1px solid #ddd;
+    }
+    .row-table{
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom:0px;
+      }
+      .col-td-1{
+        width:50px;
+        float: left;
+      }
+      .col-td-2{
+        width: calc(100% - 140px);
+        float: left;
+        text-align: left;
+        margin: 0px 10px;
+        .del-item{
+          text-decoration: revert;
+        }
+      }
+      .col-td-3{
+        width:70px;
+        float: right;
+        color: #df4a32;
+      }
+    }
+  }
+  .txt-item-b{
+    border-top: 1px solid #dddddd78;
+    padding: 10px;
+    .text-ship{
+      width: 50%;
+      float: left;
+      text-align: left;
+    }
+    .price-ship{
+      width: 50%;
+      float: right;
+      text-align: right;
+    }
+    .price-ship-total{
+      color: #df4a32;
+    }
+  }
+    .buy_icon {
+        display: inline-block;
+        color: #fff;
+        position: relative;
+        padding-left: 33px;
+        cursor: pointer;
+        svg {
+            width: 28px;
+            height: 28px;
+            fill: #222 !important;
+            transition: 0.5s;
+            position: absolute;
+            left: 0px;
+            top: 1px;
+        }
+        
+        .quality {
+            color: #fff;
+            font-size: 11px;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.5s;
+            position: absolute;
+            top: 4px;
+            right: 2px;
+            line-height: 16px;
+            background: var(--main-color);
+        }
+    }
+}
+
+.view-shopcart a{
+    padding: 8px 25px 10px;
+    background: #000;
+    color: #fff;
+    margin-bottom: 0px;
+    display: inline-block;
+}
