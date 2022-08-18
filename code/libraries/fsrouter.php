@@ -634,6 +634,16 @@ class FSRoute
 					return $url_first.$url;
 				}
 
+			case 'our-services':
+				switch ($view){
+					
+					case 'home':
+					return 'our-services.html';
+
+					default:
+					return 'our-services.html';
+				}
+
 			case 'sitemap':
 			return $url_first.'site-map.html';
 

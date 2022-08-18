@@ -61,7 +61,7 @@
 			$check_module_special = 0;
 			$mudule = FSInput::get('module');
 			$view = FSInput::get('view');
-			if($mudule == 'landingpages' || $mudule == 'products' && $view == 'cat' || $mudule == 'products' && $view == 'product'){
+			if($mudule == 'landingpages' || $mudule == 'products' && $view == 'cat' || $mudule == 'products' && $view == 'product' || $mudule == 'our_services'){
 				$check_module_special = 1;
 			}
 		?>

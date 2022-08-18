@@ -141,6 +141,10 @@ RewriteRule ^xoa-san-pham-([0-9]*).html$ index.php?module=products&view=cart&tas
 #contact
 RewriteRule ^lien-he.html$ index.php?module=contact&Itemid=43 [L]
 
+
+#our-services
+RewriteRule ^our-services.html$ index.php?module=our_services&view=home&Itemid=15 [L]
+
 #sitemap
 RewriteRule ^site-map.html(.*) index.php?module=sitemap&view=sitemap&Itemid=16 [L]
 
