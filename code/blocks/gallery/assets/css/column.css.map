@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACT,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACV,eAAe,EAAE,aAAa;;AAElC,gBAAgB;EACf,KAAK,EAAE,GAAG;EACV,KAAK,EAAE,IAAI;;AAEZ,oBAAoB;EACnB,aAAa,EAAC,GAAG",
+"sources": ["column.scss"],
+"names": [],
+"file": "column.css"
+}

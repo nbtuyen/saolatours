@@ -1,0 +1,13 @@
+.gallery-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.gallery-1 .item {
+  width: 48%;
+  float: left; }
+
+.gallery-1 .item img {
+  border-radius: 5px; }
+
+/*# sourceMappingURL=column.css.map */

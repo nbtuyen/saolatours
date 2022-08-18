@@ -11,8 +11,8 @@
 			$this -> table_name = 'fs_images';
 			$this -> table_category = 'fs_'.$this -> type.'_categories';
 			
-			$this -> arr_img_paths = array(array('small',100,100,'cut_image'),array('resized',500,313,'cut_image'),array('large',1000,625,'cut_image'));
-			$this -> arr_img_paths_other = array(array('small',330,330,'cut_image'),array('large',510,320,'cut_image'),array('resized',330,570,'cut_image'),array('compress',1,1,'compress'));
+			$this -> arr_img_paths = array(array('small',210,210,'cut_image'),array('resized',512,323,'cut_image'),array('large',330,570,'cut_image'), array('medium',330,330,'cut_image'));
+			$this -> arr_img_paths_other = array(array('small',210,210,'cut_image'),array('large',330,570,'cut_image'),array('resized',512,323,'cut_image'),array('compress',1,1,'compress'),array('medium',330,330,'cut_image'));
 			// config for save
 			$cyear = date('Y');
 			$cmonth = date('m');
