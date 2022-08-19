@@ -14,17 +14,19 @@
 .news_list_right img{
 	width: 285px;
 	border-radius:5px;
+    height: 240px;
 }
 .news_list_left .button{
-	    margin-top: 60px;
+	margin-top: 35px;
     margin-left: 70px;
 }
 .news_list_left button{
 	    padding: 17px 30px 14px 60px;
-    background-color: orange;
+    background-color: #f7941d;
     border-radius: 30px;
     color: white;
-    border: 1px solid orange;
+    border: 1px solid #f7941d;
+    cursor: pointer;
 }
 .news_list_left .svg{
 	float: right;
