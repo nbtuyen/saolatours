@@ -9,7 +9,7 @@
 	</div>
 	<div class="box">
 		<div class=box-top>
-				<?php echo $summary ?>
+
 		</div>
 		<div class="box-bot">
 			<div class=box-left>

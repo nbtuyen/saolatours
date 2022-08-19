@@ -7,6 +7,7 @@ $tmpl -> addScript('column','blocks/gallery/assets/js');
 FSFactory::include_class('fsstring');
 $page = 5;
 ?>
+
 <div class="summary">
 	<?php echo $summary ?>
 </div>

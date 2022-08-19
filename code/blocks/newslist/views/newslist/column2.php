@@ -32,7 +32,7 @@ $tmpl -> addStylesheet('column2','blocks/newslist/assets/css');
                      <?php echo $item->summary;?>
                     </div>  
                     <div class="button">
-                        <svg width="20px" height="20px" viewBox="0 0 24 24" ><g id="ic-arrows-right"><line class="cls-1"  x1="4.15" y1="12" x2="19.85" y2="12"/><path class="cls-1" d="M15.45,16.78l4.11-4.11a1,1,0,0,0,0-1.41l-4-4"/></g></svg>
+                        <svg width="20px" fill=white height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:white;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style></defs><g id="ic-arrows-right"><line class="cls-1" x1="4.15" y1="12" x2="19.85" y2="12"/><path class="cls-1" d="M15.45,16.78l4.11-4.11a1,1,0,0,0,0-1.41l-4-4"/></g></svg>
                     </div>
                 </div>
             </div>   
