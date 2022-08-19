@@ -19,6 +19,7 @@
 			$style = $parameters->getParams('style');
 			$style = $style?$style:'default';
 			$list = $model -> get_list($ordering,$limit);
+			$summary = $parameters->getParams('summary');
 			// dd($list);
 			if(!$list)
 				return;

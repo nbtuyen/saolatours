@@ -17,10 +17,10 @@ $page = 5;
 				break;
 			}
 		 ?>
-			<?php  ?>
+
 			<div class="item">
 					<?php 
-					if($i==0){
+					if($i==2){
 						echo set_image_webp($item->image,'resized',@$item->title,'lazy',1,'');
 					}else{
 						echo set_image_webp($item->image,'resized',@$item->title,'lazy',1,'');
@@ -135,7 +135,7 @@ $page = 5;
 	<div class="gradient">
 		<div class="button">
 		<button>View More
-			<div class="svg"><svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style></defs><g id="ic-arrows-bottom"><line class="cls-1" x1="12" y1="3.93" x2="12" y2="20.07"/><path class="cls-1" d="M7.22,15.67l4.11,4.11a1,1,0,0,0,1.41,0l4-4"/></g></svg></div></button>
+			<div class="svg"><svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:bevel;stroke-width:1.5px;}</style></defs><g id="ic-arrows-bottom"><line class="cls-2" x1="12" y1="3.93" x2="12" y2="20.07"/><path class="cls-2" d="M7.22,15.67l4.11,4.11a1,1,0,0,0,1.41,0l4-4"/></g></svg></div></button>
 	</div>
 	</div>
 	

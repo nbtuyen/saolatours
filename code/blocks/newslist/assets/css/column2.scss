@@ -72,6 +72,7 @@
 	    }
 	    &:hover .button{
 	    	display: block;
+	    	fill: white;
 	    }
 	    img{
 	    	min-height: 185px;
@@ -133,6 +134,10 @@
 	    overflow: hidden;
 	    font-family: "Helvetica Neue", Helvetica, sans-serif;
 	    text-align: center;
+	    color:#404040;
+	    span{
+	    	color:#a34846;
+	    }
 	    @media screen and (max-width: 500px){
 			margin: 5px 0px 0px;
 		}
@@ -205,9 +210,11 @@
 	    position: absolute;
 	    bottom: 20px;
 	    right: 20px;
-		}
+
+	    		}
 .news_list_body svg{
-    margin: 4px 6px 4px 5px;
+        margin: 6px 10px 1px 7px;
+        fill: white;
 }
 	.pos1 .position_area {
     background: #f5f5f5;

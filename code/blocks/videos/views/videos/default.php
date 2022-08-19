@@ -4,6 +4,9 @@ $tmpl -> addStylesheet("one","blocks/videos/assets/css");
 $tmpl -> addScript("videos","blocks/videos/assets/js");
 ?>
 
+<div class="wrap-ctl">
+			<div class="summary-videos"><?php echo $summary ?></div>
+		</div>
 <div class="videos_block_body block_body cls">
 	<?php foreach($list as $item){?>
 		<?php if(!$item -> file_flash) continue;?>

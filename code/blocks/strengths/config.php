@@ -25,7 +25,7 @@ $params = array (
 	'style' => array(
 		'name'=>'Style',
 		'type' => 'select',
-		'value' => array('row' => 'Hàng ngang','row_2' => 'Hàng ngang 2','row_3' => 'Hàng ngang 3','row_4' => 'Hàng ngang 4','column' => 'Dạng cột','row_5' => 'Hàng ngang 5','row2_2' => 'Hàng ngang 2 2','fix_icon' => 'Fix icon','retangle' => 'retangle','bao_hieu'=>'Báo hiếu','ankaza'=>'Ankaza')
+		'value' => array('row' => 'Hàng ngang','row_2' => 'Hàng ngang 2','row_3' => 'Hàng ngang 3','row_4' => 'Hàng ngang 4','column' => 'Dạng cột','row_5' => 'Hàng ngang 5','row2_2' => 'Hàng ngang 2 2','fix_icon' => 'Fix icon','retangle' => 'retangle','bao_hieu'=>'Báo hiếu','ankaza'=>'Ankaza','saola'=>'saola')
 	),
 	'summary' => array(
 		'name' => 'Mô tả',

@@ -9,7 +9,7 @@
 	</div>
 	<div class="box">
 		<div class=box-top>
-				Ready to see the best places to visit in Vietnam?  Let us know what kind of trip you want to take, and we'll start building a custom itinerary for you for free.  Send us an inquiry below, and our Vietnam expert travel planner will contact you quickly.  We personalize every Vietnam private tour based on your personal preferences.   There are endless possibilities and options.  When you choose to let us plan your trip, we'll book everything for you and make all the arrange <br> ments.
+				<?php echo $summary ?>
 		</div>
 		<div class="box-bot">
 			<div class=box-left>
