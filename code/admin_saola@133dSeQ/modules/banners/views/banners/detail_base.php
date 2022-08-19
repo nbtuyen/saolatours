@@ -51,6 +51,22 @@
 	</tr>
 	<tr>
 		<td valign="top" class="key">
+			<?php echo FSText :: _('Nội dung'); ?>  (Nếu bạn chọn loại banner là Image)
+		</td>
+		<td>
+			<?php
+			$oFCKeditor1 = new FCKeditor('content_1') ;
+			
+			$oFCKeditor1->Value		= @$data->content_1;
+			$oFCKeditor1->Width = 650;
+			$oFCKeditor1->Height = 450;
+			$oFCKeditor1->Create() ;
+			?>
+		</td>
+
+	</tr>
+	<tr>
+		<td valign="top" class="key">
 			<?php echo FSText :: _('Width'); ?>
 		</td>
 		<td>

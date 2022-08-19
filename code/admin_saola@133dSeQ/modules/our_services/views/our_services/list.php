@@ -27,7 +27,7 @@
 	
    // $list_config[] = array('title'=>'City','field'=>'city_id','ordering'=> 1, 'type'=>'selectbox','arr_params'=>array('size'=>10));
 	$list_config[] = array('title'=>'Ordering','field'=>'ordering','ordering'=> 1, 'type'=>'edit_text','arr_params'=>array('size'=>3));
-	$list_config[] = array('title'=>'Category','field'=>'category_id','ordering'=> 1, 'type'=>'edit_selectbox','arr_params'=>array('arry_select'=>$categories,'field_value'=>'id','field_label'=>'name','size'=>10));
+	// $list_config[] = array('title'=>'Category','field'=>'category_id','ordering'=> 1, 'type'=>'edit_selectbox','arr_params'=>array('arry_select'=>$categories,'field_value'=>'id','field_label'=>'name','size'=>10));
 	$list_config[] = array('title'=>'Mô tả','field'=>'summary','type'=>'text','arr_params');
 	$list_config[] = array('title'=>'Published','field'=>'published','ordering'=> 1, 'type'=>'published');
     $list_config[] = array('title'=>'Edit','type'=>'edit');

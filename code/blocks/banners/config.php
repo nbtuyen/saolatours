@@ -14,7 +14,7 @@
 		'style' => array(
 					'name'=>'Style',
 					'type' => 'select',
-					'value' => array('default' => 'Mặc định','wrapper'=>'Có viền bao','out'=> 'Quảng cáo trượt 2 bên','r_slide' => "Bên phải slideshow")
+					'value' => array('default' => 'Mặc định','our_services' => 'Our services','wrapper'=>'Có viền bao','out'=> 'Quảng cáo trượt 2 bên','r_slide' => "Bên phải slideshow")
 			),
 		'load_lazy' => array(
 					'name'=>'Load lazy',

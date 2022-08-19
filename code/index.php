@@ -7,7 +7,7 @@ error_reporting (E_ALL);
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 include("includes/defines.php");
 
-print_r($_REQUEST);
+// print_r($_REQUEST);
 // die;
 // print_r($_COOKIE);
 

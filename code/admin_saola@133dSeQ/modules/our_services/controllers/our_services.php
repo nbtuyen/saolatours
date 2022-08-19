@@ -19,7 +19,7 @@
 			
 			$model  = $this -> model;
 			$list = $model->get_data();
-			$categories = $model->get_categories_tree();
+			// $categories = $model->get_categories_tree();
 			
 			$pagination = $model->getPagination();
 			include 'modules/'.$this->module.'/views/'.$this->view.'/list.php';
